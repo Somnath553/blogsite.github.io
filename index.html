@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon"
+        href="https://icons-for-free.com/iconfiles/png/512/blog+blogger+internet+people+website+icon-1320168257054370871.png"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+            /* background-color: rgb(85, 85, 85); */
+            /* background-image: url("https://wallpapercave.com/wp/wp5725952.jpg"); */
+            background-image: url("https://wallpapercave.com/wp/wp5725952.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 19px;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            /* background: url('https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-12.jpg'); */
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 85% 85% / 30%;
+            /* transform: rotateX(60deg); */
+        }
+
+        header .overlay2 {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            color: #FFF;
+            text-shadow: 1px 1px 1px #333;
+            /* background-image: linear-gradient( 135deg, #ff056d69 10%, #fd20205e 100%); */
+            /* background-image: linear-gradient(135deg, #1d1c1d69 10%, #0f0f0f56 100%); */
+            background-color: rgb(0 0 0 / 52%);
+            /* background-color: rgba(255, 0, 0, 0.767); */
+            padding-top: 0px;
+
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            /* background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); */
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 80px;
+            margin-bottom: 30px;
+        }
+
+        h3,
+        q {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        q {
+            margin-left: -39px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background: #fff;
+            box-shadow: 0 3px 20px 0 #0000003b;
+            margin-top: 48px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: rgb(0, 0, 0);
+            color: #FFF;
+        }
+
+        #more {
+            display: none;
+        }
+
+        .any {
+            /* background-color: rgb(233, 146, 255); */
+            /* background-size: 500px 300px; */
+            width: 500px;
+            height: 279px;
+            margin-bottom: 30px;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin: 40px;
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.432);
+            /* Black w/opacity/see-through */
+            color: white;
+
+            padding: 30px;
+            overflow: auto;
+
+        }
+
+
+        .fa {
+            width: 10px;
+            height: 10px;
+            border-style: none;
+            color: blue;
+
+        }
+
+
+        .somu {
+            color: red;
+            cursor: pointer
+        }
+
+        .container {
+            display: flex;
+
+
+        }
+
+        .any2 {
+            width: 500px;
+            height: 357px;
+            margin-top: 40px;
+            /* margin: 90px; */
+            padding: 0px;
+            border: 5px solid black;
+            margin-left: 129px;
+            border-radius: 5000px;
+            overflow: hidden;
+            /* border-radius: 20px; */
+
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+
+        .bar {
+            margin-right: 100%;
+        }
+
+        .bar2 {
+            margin-left: 1198px;
+            background-color: blue;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+
+        .conthead {
+            font-size: 30px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .overlay3 {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            /* background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); */
+            overflow-x: hidden;
+            transition: 0.8s;
+        }
+
+        .overlay3 input {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #313030;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay3 .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: #818181;
+            cursor: pointer;
+        }
+
+        .overlay3 .closebtn:hover {
+            color: #ffff;
+        }
+
+        @media screen and (max-height: 450px) {
+
+            .overlay3 .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        .bigcontainer {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .form {
+            border: 4px solid white;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .inp {
+            width: 340px;
+            height: 10px;
+            margin: 25%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* margin-left: 151px; */
+            border: 2px solid black;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+
+        .name {
+            margin-left: -410px;
+            font-size: 30px;
+            color: gray;
+            font-family: cursive;
+        }
+
+        .logimg {
+            height: 200px;
+            width: 200px;
+            margin-top: -117px;
+            margin-bottom: -18px;
+        }
+
+        #in {
+            margin-bottom: 29px;
+            margin-top: 10px;
+        }
+
+        .abt {
+            border: 4px solid white;
+            margin: 20px;
+            border-radius: 10px;
+            height: 421px;
+
+            margin-top: -90px;
+
+        }
+
+        #k {
+            border-bottom: 4px solid white;
+            font-size: 20px;
+            display: inline-block;
+        }
+        .logo {
+            margin-top: -3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigcontainer" id="somu">
+        <header>
+            <div class="overlay2">
+                <div id="myNav" class="overlay">
+                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <img class=" logimg" id="img" src="12.png" alt="">
+                        <p class="name" id="name1"></p>
+                        <button type="" style="font-size:20px;cursor:pointer" onclick="openNav2()"
+                            id="in">signup</button>
+                        <hr>
+                        <a href="#">HOME</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#" onclick="about()">about</a>
+                        <a href="#" id="out" onclick="logout1()"></a>
+                    </div>
+                </div>
+                <div class="overlay3" id="my">
+                    <a class="closebtn" onclick="closeNav2()">&times;</a>
+                    <div class="overlay-content">
+                        <div class="form">
+                            <label for="">NAME</label>
+                            <input class="inp" type="text" id="name2">
+                            <label for="">EMAIL</label>
+                            <input class="inp" type="email">
+                            <label for="">PASSWORD</label>
+                            <input class="inp" type="password">
+                            <button class="formy" onclick="log()">LOGIN</button>
+                            <button class="formy">cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay3" id="my2">
+                    <a class="closebtn" onclick="closeNav3()">&times;</a>
+                    <div class="overlay-content">
+                        <div class="abt">
+                            <h1 id="k">ABOUT US</h1>
+                            <p>IT IS A BLOGGING SITE MADE BY  KESHAV , RIVA, SOMNATH  AND HARPREET</p>
+                        </div>
+
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="bar">&#9776;</span>
+                   <img  class="logo" src="logo.png" alt="" width="100px" height="100px">
+                <h1>MY BLOGS</h1>
+                <q>YOU CAN CUT ALL THE FLOWERS BUT YOU CANNOT KEEP SPRING FROM COMMING</q>
+
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="any">
+                <div class="bg-image"></div>
+                <div class="text">
+                    <h1 class="conthead">ANIMALS</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots">...</span><span id="more">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction()" id="myBtn">Read more</button>
+                    <span class="somu" onclick="myFunction3()">&#10084;</span>
+                    <span class="cd" id="sg">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="any2">
+                <img src="" alt="animal" width="500" height="357">
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            let dots = document.getElementById("dots");
+            let moreText = document.getElementById("more");
+            let btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function myFunction3() {
+            let d;
+            let e;
+            d = document.getElementById("sg").innerHTML;
+            e = parseInt(d);
+            document.getElementById("sg").innerHTML = e + 1;
+        }
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+        }
+        let s = 1;
+        function openNav2() {
+            if (s == 1) {
+                document.getElementById("my").style.width = "50%";
+                document.getElementById("my").style.marginLeft = "25%";
+                document.getElementById("my").style.marginTop = "5%";
+                //   document.getElementById("my").style.marginBottom="80%";
+                //   document.getElementById("somu").style.width="1000px";
+                document.getElementById("somu").style.height = "625px";
+                document.getElementById("somu").style.overflow = "hidden";
+                s = 2;
+                closeNav();
+            }
+            else {
+                document.getElementById("in").innerHTML = "Signup";
+
+                // document.getElementById("in").style.backgroundColor = "blue";
+                document.getElementById("in").style.fontSize = "20px";
+                document.getElementById("name1").innerHTML = "";
+                document.getElementById("img").src = "12.png";
+                document.getElementById("out").innerHTML = "";
+                s = 1;
+            }
+        }
+        function about() {
+            document.getElementById("my2").style.width = "50%";
+            document.getElementById("my2").style.marginLeft = "25%";
+            document.getElementById("my2").style.marginTop = "5%";
+            document.getElementById("somu").style.height = "625px";
+            document.getElementById("somu").style.overflow = "hidden";
+            closeNav();
+        }
+
+
+
+        // function logout1() {
+        //     s = 1;
+        //     document.getElementById("in").innerHTML = "Signup";
+        //     document.getElementById("in").style.backgroundColor = "blue";
+        //     document.getElementById("in").style.fontSize = "20px";
+        //     document.getElementById("name1").innerHTML = "";
+        //     document.getElementById("img").src="12.png";
+        //     document.getElementById("out").innerHTML="";
+
+        // }
+        // function openNav2() {
+        //   document.getElementById("my").style.width = "100%";
+        // }
+
+        function log() {
+            document.getElementById("my").style.width = "0%";
+            document.getElementById("my").style.marginLeft = "0%";
+            document.getElementById("my").style.marginTop = "0%";
+            //   document.getElementById("my").style.marginBottom="0%";
+            document.getElementById("somu").style.overflow = "auto";
+            document.getElementById("somu").style.height = "100%";
+            document.getElementById("in").innerHTML = "LOG out";
+            // document.getElementById("in").style.backgroundColor = "green";
+            // document.getElementById("in").style.fontSize = "15px";
+            document.getElementById("img").src = "13.png";
+            let b = document.getElementById("name2").value;
+            document.getElementById("name1").innerHTML = b;
+            s = s + 1;
+
+            openNav();
+
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        function closeNav2() {
+            document.getElementById("my").style.width = "0%";
+            document.getElementById("my").style.marginLeft = "0%";
+            document.getElementById("my").style.marginTop = "0%";
+            //   document.getElementById("my").style.marginBottom="0%";
+            document.getElementById("somu").style.overflow = "auto";
+            document.getElementById("somu").style.height = "100%";
+
+        }
+        function closeNav3() {
+            document.getElementById("my2").style.width = "0%";
+            document.getElementById("my2").style.marginLeft = "0%";
+            document.getElementById("my2").style.marginTop = "0%";
+            //   document.getElementById("my").style.marginBottom="0%";
+            document.getElementById("somu").style.overflow = "auto";
+            document.getElementById("somu").style.height = "100%";
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
