@@ -10,6 +10,7 @@
         type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>blogsite</title>
 
     <style>
         body {
@@ -150,13 +151,29 @@
             display: none;
         }
 
+        #more1 {
+            display: none;
+        }
+        #more2 {
+            display: none;
+        }
+        #more3 {
+            display: none;
+        }
+        #more4 {
+            display: none;
+        }
+        #more5 {
+            display: none;
+        }
+
         .any {
             /* background-color: rgb(233, 146, 255); */
             /* background-size: 500px 300px; */
             width: 500px;
             height: 279px;
             margin-bottom: 30px;
-            border: 4px solid black;
+            border: 4px solid rgb(150, 149, 149);
             border-radius: 10px;
             margin: 40px;
             background-color: rgb(0, 0, 0);
@@ -187,23 +204,12 @@
 
         .container {
             display: flex;
+            flex-direction: column;
 
 
         }
 
-        .any2 {
-            width: 500px;
-            height: 357px;
-            margin-top: 40px;
-            /* margin: 90px; */
-            padding: 0px;
-            border: 5px solid black;
-            margin-left: 129px;
-            border-radius: 5000px;
-            overflow: hidden;
-            /* border-radius: 20px; */
 
-        }
 
         @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 
@@ -335,8 +341,46 @@
             font-size: 20px;
             display: inline-block;
         }
+
         .logo {
             margin-top: -3%;
+        }
+
+        #gr3 {
+            display: none;
+        }
+
+        #gr4 {
+            display: none;
+        }
+
+        #gr5 {
+            display: none;
+        }
+
+        #gr6 {
+            display: none;
+        }
+
+        .buttonxt {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #tn1 {
+            margin:10px;
+            width: 150px;
+            margin-left: 10px;
+            margin-top: -21px;
+            height: 38px;
+        }
+
+        #tn2 {
+            margin:10px;
+            width: 150px;
+            margin-left: 353px;
+            margin-top: -21px;
+            height: 38px;
         }
     </style>
 </head>
@@ -380,13 +424,13 @@
                     <div class="overlay-content">
                         <div class="abt">
                             <h1 id="k">ABOUT US</h1>
-                            <p>IT IS A BLOGGING SITE MADE BY  KESHAV , RIVA, SOMNATH  AND HARPREET</p>
+                            <p>IT IS A BLOGGING SITE MADE BY KESHAV , RIVA, SOMNATH AND HARPREET</p>
                         </div>
 
                     </div>
                 </div>
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="bar">&#9776;</span>
-                   <img  class="logo" src="logo.png" alt="" width="100px" height="100px">
+                <img class="logo" src="logo.png" alt="" width="100px" height="100px">
                 <h1>MY BLOGS</h1>
                 <q>YOU CAN CUT ALL THE FLOWERS BUT YOU CANNOT KEEP SPRING FROM COMMING</q>
 
@@ -394,10 +438,10 @@
         </header>
 
         <div class="container">
-            <div class="any">
-                <div class="bg-image"></div>
+            <div class="any" id="gr1">
+
                 <div class="text">
-                    <h1 class="conthead">ANIMALS</h1>
+                    <h1 class="conthead">ANIMALS1</h1>
                     <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
                         multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
                         exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
@@ -418,42 +462,286 @@
                             record as marine species during the Cambrian explosion, which began around 542 million years
                             ago. 6,331 groups of genes common to all living animals have been identified; these may have
                             arisen from a single common ancestor that lived 650 million years ago.</span></p>
-                    <button class="learn-more" onclick="myFunction()" id="myBtn">Read more</button>
-                    <span class="somu" onclick="myFunction3()">&#10084;</span>
-                    <span class="cd" id="sg">0</span>
+                    <button class="learn-more" onclick="myFunction(1)" id="myBtn">Read more</button>
+                    <span class="somu" onclick="myFunction3(1)">&#10084;</span>
+                    <span  id="sg">0</span>
                     <button class="btn"><i class="fa fa-download"></i></button>
                 </div>
             </div>
-            <div class="any2">
-                <img src="" alt="animal" width="500" height="357">
-            </div>
+            <div class="any" id="gr2">
 
+                <div class="text">
+                    <h1 class="conthead">ANIMALS2</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots1">...</span><span id="more1">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction(2)" id="myBtn1">Read more</button>
+                    <span class="somu" onclick="myFunction3(2)">&#10084;</span>
+                    <span  id="sg1">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="any" id="gr3">
+
+                <div class="text">
+                    <h1 class="conthead">ANIMALS3</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots2">...</span><span id="more2">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction(3)" id="myBtn2">Read more</button>
+                    <span class="somu" onclick="myFunction3(3)">&#10084;</span>
+                    <span  id="sg2">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="any" id="gr4">
+
+                <div class="text">
+                    <h1 class="conthead">ANIMALS4</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots3">...</span><span id="more3">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction(4)" id="myBtn3">Read more</button>
+                    <span class="somu" onclick="myFunction3(4)">&#10084;</span>
+                    <span  id="sg3">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="any" id="gr5">
+
+                <div class="text">
+                    <h1 class="conthead">ANIMALS5</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots4">...</span><span id="more4">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction(5)" id="myBtn4">Read more</button>
+                    <span class="somu" onclick="myFunction3(5)">&#10084;</span>
+                    <span  id="sg4">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="any" id="gr6">
+
+                <div class="text">
+                    <h1 class="conthead">ANIMALS6</h1>
+                    <p style="margin: 0; font-family: 'Pacifico', cursive;">Animals (also called Metazoa) are
+                        multicellular eukaryotic organisms that form the biological kingdom Animalia. With few
+                        exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce
+                        sexually, and grow from<span id="dots5">...</span><span id="more5">a hollow sphere of cells, the
+                            blastula, during embryonic development. Over 1.5 million living animal species have been
+                            described—of which around 1 million are insects—but it has been estimated there are over 7
+                            million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in)
+                            to 33.6 metres (110 ft). They have complex interactions with each other and their
+                            environments, forming intricate food webs. The scientific study of animals is known as
+                            zoology.
+
+                            Most living animal species are in Bilateria, a clade whose members have a bilaterally
+                            symmetric body plan. The Bilateria include the protostomes—in which many groups of
+                            invertebrates are found, such as nematodes, arthropods, and molluscs—and the deuterostomes,
+                            containing both the echinoderms as well as the chordates, the latter containing the
+                            vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of
+                            the late Precambrian. Many modern animal phyla became clearly established in the fossil
+                            record as marine species during the Cambrian explosion, which began around 542 million years
+                            ago. 6,331 groups of genes common to all living animals have been identified; these may have
+                            arisen from a single common ancestor that lived 650 million years ago.</span></p>
+                    <button class="learn-more" onclick="myFunction(6)" id="myBtn5">Read more</button>
+                    <span class="somu" onclick="myFunction3(6)">&#10084;</span>
+                    <span  id="sg5">0</span>
+                    <button class="btn"><i class="fa fa-download"></i></button>
+                </div>
+            </div>
+            <div class="buttonxt">
+                <button type="previous" id="tn1" onclick="prev()">PREVIOUS</button>
+                <button type="next" id="tn2" onclick="nxt()">NEXT</button>
+            </div>
         </div>
 
     </div>
+
+    </div>
     <script>
-        function myFunction() {
+        function myFunction(x) {
             let dots = document.getElementById("dots");
             let moreText = document.getElementById("more");
             let btnText = document.getElementById("myBtn");
-
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
+            if (x == 1) {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+            else if (x == 2) {
+                if (document.getElementById("dots1").style.display === "none") {
+                    document.getElementById("dots1").style.display = "inline";
+                    document.getElementById("myBtn1").innerHTML = "Read more";
+                    document.getElementById("more1").style.display = "none";
+                }
+                else {
+                    document.getElementById("dots1").style.display = "none";
+                    document.getElementById("myBtn1").innerHTML = "Read less";
+                    document.getElementById("more1").style.display = "inline";
+                }
+            }
+            else if (x ==3 ) {
+                if (document.getElementById("dots2").style.display === "none") {
+                    document.getElementById("dots2").style.display = "inline";
+                    document.getElementById("myBtn2").innerHTML = "Read more";
+                    document.getElementById("more2").style.display = "none";
+                }
+                else {
+                    document.getElementById("dots2").style.display = "none";
+                    document.getElementById("myBtn2").innerHTML = "Read less";
+                    document.getElementById("more2").style.display = "inline";
+                }
+            }
+            else if (x == 4) {
+                if (document.getElementById("dots3").style.display === "none") {
+                    document.getElementById("dots3").style.display = "inline";
+                    document.getElementById("myBtn3").innerHTML = "Read more";
+                    document.getElementById("more3").style.display = "none";
+                }
+                else {
+                    document.getElementById("dots3").style.display = "none";
+                    document.getElementById("myBtn3").innerHTML = "Read less";
+                    document.getElementById("more3").style.display = "inline";
+                }
+            }
+            else if (x == 5) {
+                if (document.getElementById("dots4").style.display === "none") {
+                    document.getElementById("dots4").style.display = "inline";
+                    document.getElementById("myBtn4").innerHTML = "Read more";
+                    document.getElementById("more4").style.display = "none";
+                }
+                else {
+                    document.getElementById("dots4").style.display = "none";
+                    document.getElementById("myBtn4").innerHTML = "Read less";
+                    document.getElementById("more4").style.display = "inline";
+                }
+            }
+            else if (x ==6 ) {
+                if (document.getElementById("dots5").style.display === "none") {
+                    document.getElementById("dots5").style.display = "inline";
+                    document.getElementById("myBtn5").innerHTML = "Read more";
+                    document.getElementById("more5").style.display = "none";
+                }
+                else {
+                    document.getElementById("dots5").style.display = "none";
+                    document.getElementById("myBtn5").innerHTML = "Read less";
+                    document.getElementById("more5").style.display = "inline";
+                }
             }
         }
 
-        function myFunction3() {
-            let d;
-            let e;
-            d = document.getElementById("sg").innerHTML;
-            e = parseInt(d);
-            document.getElementById("sg").innerHTML = e + 1;
+        let d;
+        let d1;
+        let d2;
+        let d3;
+        let d4;
+        let d5;
+        function myFunction3(like) {
+            if(like==1)
+            {
+            d = parseInt(document.getElementById("sg").innerHTML);
+            document.getElementById("sg").innerHTML = d+ 1;
+            }
+            else if(like==2)
+            {
+            d1 = parseInt(document.getElementById("sg1").innerHTML);
+            document.getElementById("sg1").innerHTML = d1+ 1;
+            }
+            else if(like==3)
+            {
+            d2 = parseInt(document.getElementById("sg2").innerHTML);
+            document.getElementById("sg2").innerHTML = d2+ 1;
+            }
+            else if(like==4)
+            {
+            d3 = parseInt(document.getElementById("sg3").innerHTML);
+            document.getElementById("sg3").innerHTML = d3+ 1;
+            }
+            else if(like==5)
+            {
+            d4 = parseInt(document.getElementById("sg4").innerHTML);
+            document.getElementById("sg4").innerHTML = d4+ 1;
+            }
+            else if(like==6)
+            {
+            d5 = parseInt(document.getElementById("sg5").innerHTML);
+            document.getElementById("sg5").innerHTML = d5+ 1;
+            }
         }
         function openNav() {
             document.getElementById("myNav").style.width = "50%";
@@ -464,8 +752,6 @@
                 document.getElementById("my").style.width = "50%";
                 document.getElementById("my").style.marginLeft = "25%";
                 document.getElementById("my").style.marginTop = "5%";
-                //   document.getElementById("my").style.marginBottom="80%";
-                //   document.getElementById("somu").style.width="1000px";
                 document.getElementById("somu").style.height = "625px";
                 document.getElementById("somu").style.overflow = "hidden";
                 s = 2;
@@ -473,8 +759,6 @@
             }
             else {
                 document.getElementById("in").innerHTML = "Signup";
-
-                // document.getElementById("in").style.backgroundColor = "blue";
                 document.getElementById("in").style.fontSize = "20px";
                 document.getElementById("name1").innerHTML = "";
                 document.getElementById("img").src = "12.png";
@@ -493,35 +777,17 @@
 
 
 
-        // function logout1() {
-        //     s = 1;
-        //     document.getElementById("in").innerHTML = "Signup";
-        //     document.getElementById("in").style.backgroundColor = "blue";
-        //     document.getElementById("in").style.fontSize = "20px";
-        //     document.getElementById("name1").innerHTML = "";
-        //     document.getElementById("img").src="12.png";
-        //     document.getElementById("out").innerHTML="";
-
-        // }
-        // function openNav2() {
-        //   document.getElementById("my").style.width = "100%";
-        // }
-
         function log() {
             document.getElementById("my").style.width = "0%";
             document.getElementById("my").style.marginLeft = "0%";
             document.getElementById("my").style.marginTop = "0%";
-            //   document.getElementById("my").style.marginBottom="0%";
             document.getElementById("somu").style.overflow = "auto";
             document.getElementById("somu").style.height = "100%";
             document.getElementById("in").innerHTML = "LOG out";
-            // document.getElementById("in").style.backgroundColor = "green";
-            // document.getElementById("in").style.fontSize = "15px";
             document.getElementById("img").src = "13.png";
             let b = document.getElementById("name2").value;
             document.getElementById("name1").innerHTML = b;
             s = s + 1;
-
             openNav();
 
         }
@@ -532,7 +798,6 @@
             document.getElementById("my").style.width = "0%";
             document.getElementById("my").style.marginLeft = "0%";
             document.getElementById("my").style.marginTop = "0%";
-            //   document.getElementById("my").style.marginBottom="0%";
             document.getElementById("somu").style.overflow = "auto";
             document.getElementById("somu").style.height = "100%";
 
@@ -541,12 +806,75 @@
             document.getElementById("my2").style.width = "0%";
             document.getElementById("my2").style.marginLeft = "0%";
             document.getElementById("my2").style.marginTop = "0%";
-            //   document.getElementById("my").style.marginBottom="0%";
             document.getElementById("somu").style.overflow = "auto";
             document.getElementById("somu").style.height = "100%";
 
 
         }
+        var counter = 1;
+        function nxt() {
+            if (counter == 1) {
+                document.getElementById("gr1").style.display = "none";
+                document.getElementById("gr2").style.display = "none";
+                document.getElementById("gr3").style.display = "flex";
+                document.getElementById("gr4").style.display = "flex";
+                document.getElementById("gr5").style.display = "none";
+                document.getElementById("gr6").style.display = "none";
+                counter = 2;
+            }
+            else if (counter == 2) {
+                document.getElementById("gr1").style.display = "none";
+                document.getElementById("gr2").style.display = "none";
+                document.getElementById("gr3").style.display = "none";
+                document.getElementById("gr4").style.display = "none";
+                document.getElementById("gr5").style.display = "flex";
+                document.getElementById("gr6").style.display = "flex";
+                counter = 3;
+            }
+            else if (counter == 3) {
+                document.getElementById("gr1").style.display = "flex";
+                document.getElementById("gr2").style.display = "flex";
+                document.getElementById("gr3").style.display = "none";
+                document.getElementById("gr4").style.display = "none";
+                document.getElementById("gr5").style.display = "none";
+                document.getElementById("gr6").style.display = "none";
+                counter = 1;
+            }
+
+
+        }
+        function prev() {
+            if (counter == 1) {
+                document.getElementById("gr1").style.display = "none";
+                document.getElementById("gr2").style.display = "none";
+                document.getElementById("gr3").style.display = "none";
+                document.getElementById("gr4").style.display = "none";
+                document.getElementById("gr5").style.display = "flex";
+                document.getElementById("gr6").style.display = "flex";
+                counter = 3;
+            }
+            else if (counter == 2) {
+                document.getElementById("gr5").style.display = "none";
+                document.getElementById("gr6").style.display = "none";
+                document.getElementById("gr3").style.display = "none";
+                document.getElementById("gr4").style.display = "none";
+                document.getElementById("gr1").style.display = "flex";
+                document.getElementById("gr2").style.display = "flex";
+                counter = 1;
+            }
+            else if (counter == 3) {
+                document.getElementById("gr1").style.display = "none";
+                document.getElementById("gr2").style.display = "none";
+                document.getElementById("gr3").style.display = "flex";
+                document.getElementById("gr4").style.display = "flex";
+                document.getElementById("gr5").style.display = "none";
+                document.getElementById("gr6").style.display = "none";
+                counter = 2;
+            }
+
+
+        }
+
 
     </script>
 
